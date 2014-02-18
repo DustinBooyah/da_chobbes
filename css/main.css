@@ -1,0 +1,155 @@
+body {
+	background-color: #fefefe;
+	color: #333;
+	font-family:"Segoe UI", Lucida Sans, "Trebuchet MS", "Verdana Ref", Candara, sans-serif;
+	font-size: 12px;
+}
+
+/* styles */
+h2, h3 {
+	font-size: 150%;
+	color: #666;
+}
+
+a {
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover, a:active, a:focus {
+	text-decoration:none;
+}
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+#header h1 {
+	font-size: 200%;
+	text-align: left;
+	white-space: normal;
+}
+.floatleft {
+	float: left;
+	
+}
+.floatright {
+	float: right;
+}
+
+/* Menu/Sprite properties*/
+#menu {
+	list-style: none;
+	height: 150px;
+	padding: 0px;
+}
+ul#menu li {
+float: left;
+}
+
+ul#menu li a {
+	display: block;
+	width:400px;
+	text-decoration: none;
+	outline: none;
+	border: none; 
+	height: 150px;
+	background-image: url(../images/sprite.png); 
+}
+	ul#menu li a.main {
+		width: 100px; background-position: 0 0;	
+	}
+	ul#menu li a.bio {
+		width: 100px; background-position: -100px 0;	
+	}
+	ul#menu li a.work {
+		width: 100px; background-position: -200px 0;	
+	}
+	ul#menu li a.links {
+		width: 100px; background-position: -300px 0;	
+	}
+	
+	ul#menu li a.main:hover, ul#menu li a.main:focus {
+		background-position: 0 -150px;	
+	}
+	ul#menu li a.bio:hover, ul#menu li a.about:focus {
+		background-position: -100px -150px;	
+	}
+	ul#menu li a.work:hover, ul#menu li a.blog:focus {
+		background-position: -200px -150px;	
+	}
+	ul#menu li a.links:hover, ul#menu li a.contact:focus {
+		background-position: -300px -150px;	
+	}
+/* Main content*/
+.text {
+    float: right;
+	max-width: 320px;
+	padding: 45px 100px 0 0;
+}
+.subtext {
+    float: left;
+	max-width: 480px;
+	text-align: center;
+	font-size: 140%;
+	padding: 5px;
+}
+
+/*footer*/
+#footer {
+	color: #999;
+	clear: both;
+	text-align: left;
+	overflow: visible;
+	display: block;
+}
+#footer p {
+	font-size: 75%;
+}
+
+/*desktop*/
+@media only screen and (min-width: 960px) and (max-width: 1920px) {
+body{
+	background-image: url(../images/1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	}
+/*tablet*/
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+#wrapper {
+	max-width: 960px;
+	background-image: url(../images/1024x768.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+}
+}
+
+/*phone*/	
+@media only screen and (max-width: 480px) {
+#wrapper {
+	background-image: url(../images/480x800.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+#menu {
+	list-style: none;
+	width: 400px;
+	height: 150px;
+	padding: 0px;
+}
+.text {
+	max-width: 100%;
+	padding:10px;
+}
+.subtext{
+max-width: 100%;
+}
+
+img {
+max-width: 100%;
+	height: auto;
+}
+}
